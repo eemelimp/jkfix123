@@ -42,10 +42,12 @@ export default function Hero() {
             <NavigationComponent>Teippaukset</NavigationComponent>
             <NavigationComponent>Muut palvelut</NavigationComponent>
           </div>
-          <video loop autoPlay muted>
-            <source src="/videos/JKFIX KITEE.mp4" type="video/mp4"></source>
-          </video>
         </div>
+      </div>
+      <div className={styles.heroBackground}>
+        <video loop autoPlay muted className={styles.heroVideo}>
+          <source src="/videos/JKFIX KITEE.mp4" type="video/mp4"></source>
+        </video>
       </div>
     </section>
   );

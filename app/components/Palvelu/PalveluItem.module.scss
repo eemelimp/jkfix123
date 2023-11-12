@@ -27,6 +27,28 @@
       filter: drop-shadow(0px 0px 10px black);
     }
   }
+
+  @media (max-width: 1450px) {
+    h1 {
+      font-size: var(--font-size-l);
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--font-size-xl);
+    }
+
+    p {
+      font-size: var(--font-size-r);
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: var(--font-size-l);
+    }
+  }
 }
 
 .content {
@@ -34,6 +56,14 @@
   padding-inline: 62px;
   z-index: 1 !important;
   position: absolute;
+
+  @media (max-width: 1300px) {
+    padding-inline: 30px;
+  }
+
+  @media (max-width: 375px) {
+    padding-top: 20px;
+  }
 }
 
 .background {
@@ -55,6 +85,9 @@
   height: 35px;
   transition: all 500ms ease-in-out;
   transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  @media (max-width: 440px) {
+    height: 26px;
+  }
 }
 
 .info {

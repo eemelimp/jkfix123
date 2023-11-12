@@ -22,11 +22,25 @@
   );
 
   --font-size-r: 18px;
+  --font-size-m: 24px;
   --line-height-r: 29.12px;
+  --line-height-m: 161.18%;
+
+  --font-size-l: 44px;
 
   --font-size-xl: 54px;
   --font-size-xxl: 70px;
   --line-height-xl: 113.8%;
+}
+
+@media (max-width: 440px) {
+  :root {
+    --font-size-r: 16px;
+    --font-size-m: 22px;
+    --font-size-l: 28px;
+    --font-size-xl: 40px;
+    --font-size-xxl: 58px;
+  }
 }
 
 *,

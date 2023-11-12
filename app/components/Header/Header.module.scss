@@ -1,11 +1,40 @@
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   height: var(--header-height);
-  background-image: url("/images/Header-accent.png");
-
+  box-shadow: 0px 0px 20px 0px black;
+  background: var(--clr-background-1);
   div {
     display: flex;
     align-items: center;
     gap: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/images/Header-accent.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* Tämä siksi, ettei overlay blockaa klikkauksia*/
+  }
+
+  @media (max-width: 768px) {
+    p,
+    .divider {
+      display: none;
+    }
   }
 }
 
@@ -17,4 +46,18 @@
   margin: auto;
   height: 100%;
   padding-inline: var(--padding);
+
+  :nth-child(1) {
+    gap: 24px;
+  }
+}
+
+.divider {
+  background: linear-gradient(
+    to bottom,
+    rgba(112, 112, 112, 0.65),
+    rgba(112, 112, 112, 0.29)
+  );
+  width: 1px;
+  height: 30px;
 }

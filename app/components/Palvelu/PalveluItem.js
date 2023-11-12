@@ -12,9 +12,7 @@ export default function PalveluItem({ imageSrc, title, description }) {
         </div>
         <Paragraph>
           Lorem ipsum dolor sit amet consectetur. Cursus eget potenti ut laoreet
-          vulputate augue tincidunt mattis. Pharetra id quis vestibulum posuere
-          blandit gravida. Mauris laoreet purus faucibus consectetur diam.
-          Semper accumsan purus quis metus.
+          vulputate augue tincidunt mattis.
         </Paragraph>
       </div>
       <div

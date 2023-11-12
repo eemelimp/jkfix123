@@ -2,8 +2,14 @@
   p {
     max-width: 500px;
   }
+  h1 {
+    font-size: 70px;
+    margin-top: 80px;
+  }
   position: relative;
   &::after {
+    pointer-events: none;
+
     position: absolute;
     content: "";
     width: 100%;
@@ -16,39 +22,62 @@
     );
   }
   padding-bottom: 100px;
+  height: min-content;
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: var(--font-size-xl);
+    }
+  }
+}
+
+.heroBackground {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+
+  video {
+    height: 100vh;
+    opacity: 0.5;
+    position: relative;
+    margin-left: 30%;
+  }
+
+  &::after {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      var(--clr-background-1) 60%,
+      rgba(0, 0, 0, 0)
+    );
+  }
 }
 
 .heroContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  &:nth-child(1) {
-  }
+  z-index: 1;
+  position: relative;
 
   .leftSide {
     padding-top: 128px;
-    width: 560px;
   }
 
   .rightSide {
     position: relative;
-    video {
-      height: 850px;
-      opacity: 0.5;
-    }
 
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        var(--clr-background-1),
-        rgba(0, 0, 0, 0)
-      );
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+      grid-auto-flow: row;
     }
   }
 
@@ -67,6 +96,26 @@
       width: 1px;
       height: 37px;
     }
+
+    @media (max-width: 480px) {
+      margin-top: 3rem;
+      flex-direction: column;
+
+      :nth-child(2) {
+        background: linear-gradient(
+          to right,
+          rgba(112, 112, 112, 0.65),
+          rgba(112, 112, 112, 0.29)
+        );
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
   }
 }
 
@@ -80,6 +129,13 @@
   margin: 0;
   z-index: 2;
   position: absolute;
-  top: 150px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 150px;
+  @media (max-width: 978px) {
+    left: 50px;
+  }
+  @media (max-width: 870px) {
+    display: none;
+  }
 }
