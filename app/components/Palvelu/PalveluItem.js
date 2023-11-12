@@ -1,24 +1,46 @@
+" use client";
 import React from "react";
 
 import styles from "./PalveluItem.module.scss";
 import { Heading1, Paragraph } from "../Utils/Texts";
+import { motion } from "framer-motion";
 
-export default function PalveluItem({ imageSrc, title, description }) {
+export default function PalveluItem({ imageSrc, title, description, index }) {
+  const fadeInVariants = {
+    initial: {
+      opacity: 0,
+      y: -20,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.5,
+        delay: index * 0.35,
+      },
+    }),
+  };
+
   return (
-    <div className={styles.palveluItem}>
+    <motion.div
+      className={styles.palveluItem}
+      variants={fadeInVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      margin={200}
+      custom={index}
+    >
       <div className={styles.content}>
         <div className={styles.info}>
           <div className={styles.accent}></div> <Heading1>{title}</Heading1>
         </div>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur. Cursus eget potenti ut laoreet
-          vulputate augue tincidunt mattis.
-        </Paragraph>
+        <Paragraph>Tähän lyhyt kuvaus tarjotusta palvelusta.</Paragraph>
       </div>
       <div
         className={styles.background}
         style={{ backgroundImage: imageSrc }}
       ></div>
-    </div>
+    </motion.div>
   );
 }

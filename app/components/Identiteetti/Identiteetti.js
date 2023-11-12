@@ -1,11 +1,19 @@
+"use client";
 import React from "react";
 import styles from "./Identiteetti.module.scss";
 import { Heading1, Paragraph } from "../Utils/Texts";
 import HighlightedText from "../HighlightedText/HighlightedText";
+import { motion } from "framer-motion";
 
 export default function Identiteetti() {
   return (
-    <section className={styles.identiteettiSection}>
+    <motion.section
+      className={styles.identiteettiSection}
+      initial={{ opacity: 0 }}
+      duration={1}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <div
         className={`container ${styles.identiteettiContainer}`}
         style={{ textAlign: "center" }}
@@ -22,6 +30,6 @@ export default function Identiteetti() {
           </Paragraph>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
