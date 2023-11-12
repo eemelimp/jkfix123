@@ -1,0 +1,36 @@
+.identiteettiSection {
+  background: var(--clr-background-2);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/images/JKFIX gradient background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none; /* Tämä siksi, ettei overlay blockaa klikkauksia*/
+  }
+}
+.identiteettiContainer {
+  padding-top: 92px;
+  padding-bottom: 280px;
+  align-items: center;
+}
+
+.identiteettiContent {
+  z-index: 2;
+  :nth-child(1) {
+    padding-bottom: 22px;
+  }
+  :nth-child(3) {
+    max-width: 450px;
+    margin: auto;
+  }
+  margin: auto;
+}

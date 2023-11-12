@@ -1,0 +1,85 @@
+.sectionHero {
+  p {
+    max-width: 500px;
+  }
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      var(--clr-background-2)
+    );
+  }
+  padding-bottom: 100px;
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &:nth-child(1) {
+  }
+
+  .leftSide {
+    padding-top: 128px;
+    width: 560px;
+  }
+
+  .rightSide {
+    position: relative;
+    video {
+      height: 850px;
+      opacity: 0.5;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        var(--clr-background-1),
+        rgba(0, 0, 0, 0)
+      );
+    }
+  }
+
+  .heroInfo {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    :nth-child(2) {
+      background: linear-gradient(
+        to bottom,
+        rgba(112, 112, 112, 0.65),
+        rgba(112, 112, 112, 0.29)
+      );
+      width: 1px;
+      height: 37px;
+    }
+  }
+}
+
+.heroSign {
+  margin-left: -100px;
+  margin-top: 18px;
+  position: relative;
+}
+
+.heroNavigation {
+  margin: 0;
+  z-index: 2;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}

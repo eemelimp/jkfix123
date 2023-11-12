@@ -1,0 +1,16 @@
+.paragraph {
+  color: var(--clr-paragraph);
+  font-size: var(--font-size-r);
+  line-height: var(--line-height-r);
+  font-family: Jura, "sans-serif";
+}
+
+.heading1 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  font-family: Aldrich, "sans-serif";
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

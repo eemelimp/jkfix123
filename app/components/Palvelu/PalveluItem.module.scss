@@ -1,0 +1,70 @@
+.palveluItem {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+
+  p {
+    transition: all 300ms ease-in-out;
+    transform: translateY(25%);
+    opacity: 0;
+  }
+
+  &:hover {
+    p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .background {
+      transform: scale(102%);
+      opacity: 0.4;
+    }
+    .accent {
+      width: 100%;
+    }
+    h1 {
+      filter: drop-shadow(0px 0px 10px black);
+    }
+  }
+}
+
+.content {
+  padding-top: 72px;
+  padding-inline: 62px;
+  z-index: 1 !important;
+  position: absolute;
+}
+
+.background {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none; /* Tämä siksi, ettei overlay blockaa klikkauksia*/
+  transition: all 300ms ease-in-out;
+}
+
+.accent {
+  background: var(--grad-2);
+  width: 20px;
+  height: 35px;
+  transition: all 500ms ease-in-out;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.info {
+  display: flex;
+  position: relative;
+  h1 {
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    transition: all 300ms ease-in-out;
+  }
+  margin-bottom: 100px;
+}

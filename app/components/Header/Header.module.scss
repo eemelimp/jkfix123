@@ -1,0 +1,20 @@
+.header {
+  height: var(--header-height);
+  background-image: url("/images/Header-accent.png");
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-width);
+  margin: auto;
+  height: 100%;
+  padding-inline: var(--padding);
+}
