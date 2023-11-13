@@ -11,6 +11,23 @@
   font-family: Aldrich, "sans-serif";
   text-transform: uppercase;
   color: var(--clr-white);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.heading2 {
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+  font-family: Aldrich, "sans-serif";
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 600;
+}
+.heading3 {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-family: Aldrich, "sans-serif";
+  text-transform: uppercase;
+  color: var(--clr-white);
   font-weight: 500;
   margin-bottom: 1rem;
 }

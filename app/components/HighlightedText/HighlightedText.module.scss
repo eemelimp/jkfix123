@@ -11,3 +11,22 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.style3 {
+  position: relative;
+  z-index: 1;
+  &::before {
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    width: 104%;
+    height: 20%;
+    background: var(--grad-2);
+    transform: skew(-15deg) translateX(-50%);
+    -webkit-transform: skewX(-15deg) translateX(-50%);
+    -ms-transform: skewX(-15deg) translateX(-50%);
+    bottom: 10%;
+    left: 50%;
+  }
+}

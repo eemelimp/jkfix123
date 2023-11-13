@@ -6,11 +6,12 @@
   --padding: 2rem;
 
   --clr-accent-1: #f0bd70;
+  --clr-accent-2: #ebc79241;
   --clr-background-1: #040405;
   --clr-background-2: #000000;
   --clr-paragraph: #bbbcc0;
   --clr-white: #fafafa;
-  --grad-1: linear-gradient(to bottom, #4f4f4f, #272727);
+  --grad-1: linear-gradient(to bottom, #181818, #272727);
   --grad-2: linear-gradient(to right, #b97714, rgba(240, 189, 112, 1));
   /* --grad-2: linear-gradient(to right, rgb(234,138,138), rgb(154, 53, 53)); */
 
@@ -60,6 +61,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  scroll-behavior: smooth;
 }
 
 body {

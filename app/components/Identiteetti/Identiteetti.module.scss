@@ -18,15 +18,15 @@
   }
 }
 .identiteettiContainer {
-  padding-top: 200px;
+  padding-top: 180px;
   padding-bottom: 280px;
   align-items: center;
 }
 
 .identiteettiContent {
   z-index: 2;
-  :nth-child(1) {
-    padding-bottom: 22px;
+  :nth-child(2) {
+    margin-top: 22px;
   }
   :nth-child(3) {
     max-width: 450px;

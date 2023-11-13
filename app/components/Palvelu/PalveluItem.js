@@ -15,8 +15,8 @@ export default function PalveluItem({ imageSrc, title, description, index }) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.5,
-        delay: index * 0.35,
+        duration: 1.1,
+        delay: index * 0.2,
       },
     }),
   };

@@ -1,0 +1,108 @@
+.contactForm {
+  background-color: var(--clr-background-1);
+  max-width: 550px;
+  margin: auto;
+  font-family: Jura, "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
+  padding-inline: 1rem;
+  //   background-image: url("/images/JKFIX autopesut vahaukset teippaukset lasien tummennus kitee.png");
+  //   background-size: 100%;
+
+  h2 {
+    text-align: center;
+  }
+  p {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  button {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1050px) {
+    margin-top: 150px;
+  }
+}
+
+.textInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  background-color: var(--clr-background-1);
+  border: 1px solid #171717;
+  box-shadow: inset 0px -1px 0px 0px #00000021;
+  filter: drop-shadow(0px 1px 3px #0c0b1a);
+  opacity: 0.5;
+  transition: all 0.5s;
+  color: var(--clr-paragraph);
+  max-width: 480px;
+  margin-block: 12px;
+  & input[type="text"] {
+    height: 36px;
+  }
+  &:focus,
+  &:hover,
+  &:has(input[type="text"]:not(:placeholder-shown)),
+  &:has(textarea:not(:placeholder-shown)) {
+    //jos .textInputilla on input[type="text"] child element, jolla ei ole placeholder näkyvissä, eli sisältää jo tekstiä
+
+    opacity: 1;
+    color: var(--clr-paragraph);
+    background-color: #050505;
+    box-shadow: 0px 1px 10px -10px #0e0c2a;
+  }
+
+  & input[type="text"],
+  & textarea {
+    background: transparent;
+    border: 0;
+    width: 100%;
+    color: var(--clr-paragraph);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  //trick "just works" jotta saadaan harmaa random bg vittuun
+  &input[type="text"]:-webkit-autofill,
+  &input[type="text"]:-webkit-autofill:hover,
+  &input[type="text"]:-webkit-autofill:focus,
+  &input[type="text"]:-webkit-autofill:active {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  svg {
+    height: 24px;
+    width: auto;
+    color: inherit;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.textarea {
+  resize: none;
+  overflow-y: hidden;
+  height: auto;
+  border: none;
+  margin-bottom: 10px;
+  color: var(--clr-paragraph);
+  background: transparent;
+}

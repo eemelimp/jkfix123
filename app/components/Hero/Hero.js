@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./Hero.module.scss";
 import { Heading1, Paragraph } from "../Utils/Texts";
@@ -5,11 +6,19 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 import Image from "next/image";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 import NavigationComponent from "../NavigationComponent/NavigationComponent";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className={styles.sectionHero}>
-      <div className={`container ${styles.heroContainer}`}>
+      <motion.div
+        className={`container ${styles.heroContainer}`}
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className={styles.leftSide}>
           <Heading1>
             <HighlightedText type={2}>
@@ -32,7 +41,9 @@ export default function Hero() {
               className={styles.heroSign}
             ></img>
             <div></div>
-            <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
+            <Link href="/#ota-yhteytta">
+              <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
+            </Link>
           </div>
         </div>
         <div className={styles.rightSide}>
@@ -43,7 +54,7 @@ export default function Hero() {
             <NavigationComponent>Muut palvelut</NavigationComponent>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.heroBackground}>
         <video loop autoPlay muted className={styles.heroVideo}>
           <source src="/videos/JKFIX KITEE.mp4" type="video/mp4"></source>

@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./Header.module.scss";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 import { Paragraph } from "../Utils/Texts";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import ButtonSecondary from "../Buttons/ButtonSecondary";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -10,11 +13,15 @@ export default function Header() {
         <div>
           <img src="/images/Logo.svg"></img>
           <div className={styles.divider}></div>
-          <Paragraph>Onhan puhtaus nyt siistiä!</Paragraph>
+          <Paragraph>
+            Onhan puhtaus nyt <span className={styles.highlight}>siistiä!</span>
+          </Paragraph>
         </div>
         <div>
           <Paragraph>+358 XX XXX XXXX</Paragraph>
-          <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
+          <Link href="/#ota-yhteytta">
+            <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
+          </Link>
         </div>
       </div>
     </header>

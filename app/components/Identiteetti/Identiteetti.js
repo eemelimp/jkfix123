@@ -7,29 +7,29 @@ import { motion } from "framer-motion";
 
 export default function Identiteetti() {
   return (
-    <motion.section
-      className={styles.identiteettiSection}
-      initial={{ opacity: 0 }}
-      duration={1}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-    >
-      <div
+    <section className={styles.identiteettiSection}>
+      <motion.div
         className={`container ${styles.identiteettiContainer}`}
         style={{ textAlign: "center" }}
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
         <div className={styles.identiteettiContent}>
           <Paragraph>
             <HighlightedText type={1}>KEITÄ PALVELEMME</HighlightedText>
           </Paragraph>
 
-          <Heading1>KUN LOPPUTULOS MERKITSEE</Heading1>
+          <Heading1>
+            KUN LOPPUTULOS <HighlightedText type={3}>MERKITSEE</HighlightedText>
+          </Heading1>
           <Paragraph>
             Tarjoamme monipuolisia palveluja sinulle, kenelle lopputuloksella on
             väliä.
           </Paragraph>
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 }
