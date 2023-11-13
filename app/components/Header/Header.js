@@ -14,7 +14,8 @@ export default function Header() {
           <img src="/images/Logo.svg"></img>
           <div className={styles.divider}></div>
           <Paragraph>
-            Onhan puhtaus nyt <span className={styles.highlight}>siistiä!</span>
+            Onhan puhtaus nyt{" "}
+            <HighlightedText type={3}>siistiä!</HighlightedText>
           </Paragraph>
         </div>
         <div>
