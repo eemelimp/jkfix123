@@ -26,7 +26,7 @@ export default function Contact() {
               </Paragraph>
               <div className={styles.contactInfo}>
                 <Paragraph>
-                  <strong>Jape Karhapää</strong>
+                  <strong>Jan Karhapää</strong>
                 </Paragraph>
                 <Paragraph>
                   <strong>Osoite, Postinumero, Kitee</strong>
