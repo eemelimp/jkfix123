@@ -4,4 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 28px;
+
+  p {
+    font-size: var(--font-size-r);
+    font-family: Aldrich, "sans-serif";
+  }
 }

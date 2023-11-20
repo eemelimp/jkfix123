@@ -35,7 +35,7 @@ export default function PalveluItem({ imageSrc, title, description, index }) {
         <div className={styles.info}>
           <div className={styles.accent}></div> <Heading1>{title}</Heading1>
         </div>
-        <Paragraph>Tähän lyhyt kuvaus tarjotusta palvelusta.</Paragraph>
+        <Paragraph>{description}</Paragraph>
       </div>
       <div
         className={styles.background}

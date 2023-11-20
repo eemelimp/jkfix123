@@ -6,7 +6,7 @@ import { Heading1, Paragraph } from "../Utils/Texts";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import { BiPhone, BiMailSend } from "react-icons/bi";
 
-export default function Contact() {
+export default function Contact({ tiedot }) {
   return (
     <section className={styles.contactSection} id="ota-yhteytta">
       <div className="container">
@@ -26,31 +26,31 @@ export default function Contact() {
               </Paragraph>
               <div className={styles.contactInfo}>
                 <Paragraph>
-                  <strong>Jan Karhapää</strong>
+                  <strong>{tiedot.kontaktihenkilonNimi}</strong>
                 </Paragraph>
                 <Paragraph>
-                  <strong>Osoite, Postinumero, Kitee</strong>
+                  <strong>{tiedot.osoite}</strong>
                 </Paragraph>
                 <Paragraph>
-                  <BiPhone /> <strong>+358 XX XXX XXXX</strong>
+                  <BiPhone /> <strong>{tiedot.puhelinnumero}</strong>
                 </Paragraph>
                 <Paragraph>
-                  <BiMailSend /> <strong>info@jkfix.fi</strong>
+                  <BiMailSend /> <strong>{tiedot.sahkopostiosoite}</strong>
                 </Paragraph>
               </div>
 
               <div className={styles.aukiolot}>
                 <div>
                   <h2>MA-PE</h2>
-                  <Paragraph>08:00-16:30</Paragraph>
+                  <Paragraph>{tiedot.maPeAukioloajat}</Paragraph>
                 </div>
                 <div>
                   <h2>LA</h2>
-                  <Paragraph>09:00-15:00</Paragraph>
+                  <Paragraph>{tiedot.laAukioloajat}</Paragraph>
                 </div>
                 <div>
                   <h2>SU</h2>
-                  <Paragraph>SULJETTU</Paragraph>
+                  <Paragraph>{tiedot.suAukioloajat}</Paragraph>
                 </div>
               </div>
               <img

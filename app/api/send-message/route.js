@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const user = process.env.EMAIL;
-const pass = process.env.EMAIL_PASS;
+const user = process.env.FROM_EMAIL;
+const pass = process.env.FROM_EMAIL_PASS;
 const toEmail = process.env.TO_EMAIL;
 
 export async function POST(request) {
@@ -31,11 +31,11 @@ export async function POST(request) {
       <h2>Lähettäjän tiedot</h2>
       <p><strong>Päiväys:</strong> ${body.date}</p>
       <p><strong>Aika:</strong> ${body.time}</p>
-      <p><strong>Nimi:</strong> ${body.firstName}</p>
+      <p><strong>Etunimi:</strong> ${body.firstName}</p>
+      <p><strong>Sukunimi:</strong> ${body.lastName}</p>
       <p><strong>Puhelinnumero:</strong> ${body.phoneNumber}</p>
       <p><strong>Sähköpostiosoite:</strong> ${body.email}</p>
       <h2>Viestin tiedot</h2>
-      <p><strong>Aihe:</strong> ${body.category}</p>
       <p><strong>Sisältö:</strong> ${body.content}</p>`,
     });
 

@@ -19,7 +19,7 @@ export default function Header() {
           </Paragraph>
         </div>
         <div>
-          <Paragraph>+358 XX XXX XXXX</Paragraph>
+          {/* <Paragraph>+358 XX XXX XXXX</Paragraph> */}
           <Link href="/#ota-yhteytta">
             <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
           </Link>
