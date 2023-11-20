@@ -135,22 +135,21 @@ export default function ContactForm() {
               ></textarea>
             </div>
             {errors.content && <Error message={errors.content.message} />}
-            <div clasName={styles.row} style={{ marginBlock: "8px" }}>
-              <label className={styles.tietosuojaselosteTeksti}>
-                <input {...register("terms")} type="checkbox" />
+            {/* <div className={styles.row} style={{ marginBlock: "8px" }}>
+              <input
+                type="checkbox"
+                {...register("terms")}
+                className={styles.checkbox}
+              />
+              <label>
                 Hyväksyn{" "}
-                <a
-                  rel="nofollow"
-                  target="_blank"
-                  href={`/tietosuojaseloste`}
-                  className={styles.termsLink}
-                >
+                <a rel="nofollow" target="_blank" href={`/tietosuojaseloste`}>
                   tietosuoja&shy;selosteen
                 </a>
               </label>
             </div>
 
-            {errors.terms && <Error message={errors.terms.message} />}
+            {errors.terms && <Error message={errors.terms.message} />} */}
 
             <div className={styles.row} style={{ justifyContent: "center" }}>
               <button type="submit" className="buttonPrimary">

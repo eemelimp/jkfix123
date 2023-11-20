@@ -9,11 +9,11 @@ const signUpSchema = z.object({
     .string()
     .trim()
     .min(10, "Viestin tulee olla vähintään 10 merkkiä pitkä."),
-  terms: z.literal(true, {
-    errorMap: () => ({
-      message: "Sinun tulee hyväksyä tietosuojaseloste sekä käyttöehdot.",
-    }),
-  }),
+  // terms: z.literal(true, {
+  //   errorMap: () => ({
+  //     message: "Sinun tulee hyväksyä tietosuojaseloste sekä käyttöehdot.",
+  //   }),
+  // }),
 });
 
 export { signUpSchema };
