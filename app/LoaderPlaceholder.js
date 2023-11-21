@@ -34,6 +34,7 @@ export default function LoaderPlaceholder() {
           </a>
         </div>
       </div>
+      <Paragraph>© JKFIX 2023</Paragraph>
     </div>
   );
 }
