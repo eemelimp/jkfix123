@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KH0RH1M52E');`}</Script>
-      <Script id="meta-pixel">{`!function(f,b,e,v,n,t,s)
+      {/* <Script id="meta-pixel">{`!function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '367998918902024');
-        fbq('track', 'PageView');`}</Script>
+        fbq('track', 'PageView');`}</Script> */}
       <body>
         <Header />
         <main>{children}</main>
