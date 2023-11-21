@@ -41,11 +41,8 @@ export default function RootLayout({ children }) {
         fbq('init', '367998918902024');
         fbq('track', 'PageView');`}</Script>
       <body>
-        <main>
-          <LoaderPlaceholder />
-        </main>
-        {/* <Header />
-        <main>{children}</main> */}
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );
