@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "./components/Header/Header";
 import { Jura } from "next/font/google";
 import LoaderPlaceholder from "./LoaderPlaceholder";
+import Script from "next/script";
 
 export const metadata = {
   title: {
@@ -25,6 +26,10 @@ const jura = Jura({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jura.className}>
+      <Script id="google-analytics">{`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KH0RH1M52E');`}</Script>
       <body>
         <main>
           <LoaderPlaceholder />
