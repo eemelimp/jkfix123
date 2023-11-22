@@ -6,11 +6,11 @@ import Script from "next/script";
 
 export const metadata = {
   title: {
-    default: "Autoteipit, pesut ja pinnoitukset Kitee | JKFIX",
+    default: "Autoteipit, autopesu ja pinnoitukset Kitee | JKFIX",
     template: `%s | JKFIX`,
   },
   description:
-    "JKFIX:llä tarjoamme sinulle räätälöityjä ja asiakaskeskeisiä pesu, teippaus ja pinnoituspalveluita, jotta voit ajaa ylpeänä ja ilman huolta. Meillä on intohimo autonhoitoon — ja se näkyy tuloksissamme!",
+    "JKFIX:llä tarjoamme sinulle räätälöityjä ja asiakaskeskeisiä pesu, teippaus ja pinnoituspalveluita, jotta sinä voit vain nauttia lopputuloksesta. Meillä on intohimo autonhoitoon — ja se näkyy tuloksissamme!",
   generator: "Next.JS 14",
   applicationName: "JKFIX",
   openGraph: {
@@ -26,10 +26,16 @@ const jura = Jura({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jura.className}>
-      <Script id="google-analytics">{`window.dataLayer = window.dataLayer || [];
+      {/* <Script id="google-analytics">{`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-KH0RH1M52E');`}</Script>
+  gtag('config', 'G-KH0RH1M52E');`}</Script> */}
+
+      <Script>{`<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJVCZSNF');</script>`}</Script>
       {/* <Script id="meta-pixel">{`!function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -41,8 +47,15 @@ export default function RootLayout({ children }) {
         fbq('init', '367998918902024');
         fbq('track', 'PageView');`}</Script> */}
       <body>
-        <Header />
-        <main>{children}</main>
+        <Script>{`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVCZSNF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`}</Script>
+        <main>
+          <LoaderPlaceholder />
+        </main>
+        {/* <Header />
+        <main>
+        {children}
+        </main> */}
       </body>
     </html>
   );

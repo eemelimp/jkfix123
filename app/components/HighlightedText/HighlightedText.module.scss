@@ -1,5 +1,5 @@
 .style1 {
-  background: var(--grad-2);
+  background: var(--grad-accent-2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -22,7 +22,7 @@
     content: "";
     width: 104%;
     height: 20%;
-    background: var(--grad-2);
+    background: var(--grad-accent-1);
     transform: skew(-15deg) translateX(-50%);
     -webkit-transform: skewX(-15deg) translateX(-50%);
     -ms-transform: skewX(-15deg) translateX(-50%);

@@ -31,12 +31,13 @@ export default function Hero() {
             pinnoitus palveluita <strong>kokemuksella</strong> ja{" "}
             <strong>ammattitaidolla</strong>. <br></br>
             <br></br>Meillä on intohimo autonhoitoon, ja se näkyy tuloksissamme.
-            Huolehdimme autosi puhtaudesta, suojasta ja kiillosta, jotta voit
-            ajaa ylpeänä ja ilman huolia.
+            Huolehdimme autosi puhtaudesta, suojasta ja kiillosta, jotta sinä
+            voit vain{" "}
+            <HighlightedText type={1}>nauttia lopputuloksesta.</HighlightedText>
           </Paragraph>
           <div className={styles.heroInfo}>
             <img
-              src="/images/Jape Karhapää FIXIT Kitee.png"
+              src="/images/Jape Karhapää JKFIX Kitee.png"
               alt="Jape Karhapään allekirjoitus"
               className={styles.heroSign}
             ></img>

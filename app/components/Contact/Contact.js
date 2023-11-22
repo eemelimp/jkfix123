@@ -17,8 +17,8 @@ export default function Contact({ tiedot }) {
                 <HighlightedText type={1}>OTA YHTEYTTÄ</HighlightedText>
               </Paragraph>
               <Heading1>
-                Sinä pyydät,{" "}
-                <HighlightedText type={3}>me teemme</HighlightedText>
+                Sinä pyydät, me{" "}
+                <HighlightedText type={3}>teemme</HighlightedText>
               </Heading1>
               <Paragraph>
                 Mitään ei tapahdu vahingossa. Ota meihin yhteyttä, ja
