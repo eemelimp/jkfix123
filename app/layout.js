@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: {
-    default: "Autoteipit, pesut ja pinnoitukset Kitee | JKFIX",
+    default: "Autoteipit, autopesu ja pinnoitukset Kitee | JKFIX",
     template: `%s | JKFIX`,
   },
   description:
