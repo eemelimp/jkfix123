@@ -54,9 +54,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         fbq('init', '367998918902024');
         fbq('track', 'PageView');`}</Script> */}
       <body>
-        <Suspense>
+        {/* <Suspense>
           <GtmComponent />
-        </Suspense>
+        </Suspense> */}
         {/* <Script>{`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVCZSNF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`}</Script> */}
         {/* <Script>{`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVCZSNF"
