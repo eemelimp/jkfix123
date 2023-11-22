@@ -10,7 +10,7 @@ export const metadata = {
     template: `%s | JKFIX`,
   },
   description:
-    "JKFIX:llä tarjoamme sinulle räätälöityjä ja asiakaskeskeisiä pesu, teippaus ja pinnoituspalveluita, jotta voit ajaa ylpeänä ja ilman huolta. Meillä on intohimo autonhoitoon — ja se näkyy tuloksissamme!",
+    "JKFIX:llä tarjoamme sinulle räätälöityjä ja asiakaskeskeisiä pesu, teippaus ja pinnoituspalveluita, jotta sinä voit vain nauttia lopputuloksesta. Meillä on intohimo autonhoitoon — ja se näkyy tuloksissamme!",
   generator: "Next.JS 14",
   applicationName: "JKFIX",
   openGraph: {
