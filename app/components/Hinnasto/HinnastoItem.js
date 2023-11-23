@@ -11,7 +11,12 @@ export default function HinnastoItem({ hinta }) {
     <div className={styles.item}>
       <div className={styles.top}>
         <div className={styles.titleContainer}>
-          <Heading4>{hinta.nimi}</Heading4>
+          <Heading4>
+            <HighlightedText type={4}>
+              {/* <HighlightedText type={1}>// </HighlightedText> */}
+              {hinta.nimi}
+            </HighlightedText>
+          </Heading4>
         </div>
       </div>
       <div className={styles.mid}>

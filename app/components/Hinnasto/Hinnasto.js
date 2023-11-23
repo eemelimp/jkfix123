@@ -10,13 +10,13 @@ export default function Hinnasto({ hinnat }) {
       <div className="container">
         <div className={styles.bannerContainer}>
           <div className={styles.hinnastoBanner}>
-            <Heading1>Hinnasto</Heading1>
+            <Heading1>
+              <HighlightedText type={4}>Hinnasto</HighlightedText>
+            </Heading1>
             <Paragraph>
               Hinnoittelumme perustuu täysin asiakkaan toivomaan kokonaisuuteen
-              — ollaan yhteydessä ja{" "}
-              <HighlightedText type={2}>
-                suunnitellaan sinun palvelusi
-              </HighlightedText>
+              — ollaan yhteydessä ja suunnitellaan{" "}
+              <HighlightedText type={2}>sinun palvelusi</HighlightedText>
             </Paragraph>
           </div>
         </div>
