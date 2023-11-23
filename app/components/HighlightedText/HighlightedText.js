@@ -6,7 +6,7 @@ export default function HighlightedText({ children, type }) {
     <span
       className={` ${type === 1 && styles.style1} ${
         type === 2 && styles.style2
-      } ${type === 3 && styles.style3}`}
+      } ${type === 3 && styles.style3} ${type === 4 && styles.style4}`}
     >
       {children}
     </span>

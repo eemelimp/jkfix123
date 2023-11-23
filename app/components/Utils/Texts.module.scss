@@ -6,7 +6,7 @@
 }
 
 .heading1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   line-height: var(--line-height-xl);
   font-family: Aldrich, "sans-serif";
   text-transform: uppercase;
@@ -15,7 +15,7 @@
   margin-bottom: 1rem;
 }
 .heading2 {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   line-height: var(--line-height-l);
   font-family: Aldrich, "sans-serif";
   text-transform: uppercase;
@@ -23,11 +23,20 @@
   font-weight: 600;
 }
 .heading3 {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   line-height: var(--line-height-m);
   font-family: Aldrich, "sans-serif";
   text-transform: uppercase;
   color: var(--clr-white);
   font-weight: 500;
+  // margin-bottom: 1rem;
+}
+.heading4 {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-family: Aldrich, "sans-serif";
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 300;
   // margin-bottom: 1rem;
 }

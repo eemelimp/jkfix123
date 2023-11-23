@@ -1,0 +1,24 @@
+.kysymys {
+  display: flex;
+  flex-direction: column;
+  padding-block: 34px;
+  button {
+    background: none;
+    border: none;
+  }
+
+  p {
+    max-width: 610px;
+    color: var(--clr-paragraph);
+    font-size: var(--font-size-r);
+    line-height: var(--line-height-r);
+    font-family: Jura, "sans-serif";
+  }
+  cursor: default;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

@@ -1,12 +1,12 @@
 .style1 {
-  background: var(--grad-accent-2);
+  background: var(--grad-accent-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .style2 {
-  background: var(--grad-3);
+  background: var(--grad-accent-2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -29,4 +29,11 @@
     bottom: 10%;
     left: 50%;
   }
+}
+
+.style4 {
+  background: var(--grad-accent-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

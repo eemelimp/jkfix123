@@ -25,19 +25,19 @@
     .accent {
       width: 100%;
     }
-    h1 {
+    h2 {
       filter: drop-shadow(0px 0px 10px black);
     }
   }
 
   @media (max-width: 1450px) {
-    h1 {
+    h2 {
       font-size: var(--font-size-l);
     }
   }
 
   @media (max-width: 768px) {
-    h1 {
+    h2 {
       font-size: var(--font-size-xl);
     }
 
@@ -47,7 +47,7 @@
   }
 
   @media (max-width: 480px) {
-    h1 {
+    h2 {
       font-size: var(--font-size-l);
     }
   }
@@ -87,7 +87,7 @@
   transform: skew(-20deg);
   width: 20px;
   height: 35px;
-  transition: all 500ms ease-in-out;
+  transition: all 380ms ease-in-out;
   transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
   @media (max-width: 440px) {
     height: 26px;
@@ -97,7 +97,7 @@
 .info {
   display: flex;
   position: relative;
-  h1 {
+  h2 {
     position: absolute;
     left: 35px;
     top: 10px;

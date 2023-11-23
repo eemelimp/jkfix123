@@ -1,0 +1,48 @@
+.bannerContainer {
+  z-index: 0;
+  position: relative;
+}
+.hinnastoBanner {
+  background-image: url("/images/hinnasto-banner-bg.png");
+  padding-inline: 46px;
+  border-radius: var(--border-smooth);
+  padding-top: 77px;
+  padding-bottom: 150px;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: -38px;
+  }
+
+  p {
+    max-width: 620px;
+  }
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: -10px;
+    height: 140px;
+    width: 35px;
+    background: var(--grad-accent-1);
+    transform: skew(-32deg);
+    -webkit-transform: skewX(-32deg);
+    -ms-transform: skewX(-32deg);
+  }
+}
+
+.hinnastoSection {
+  padding-top: 200px;
+  background-image: url("/images/hinnasto-bg.png");
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+.hinnastoContainer {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}

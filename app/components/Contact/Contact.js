@@ -2,9 +2,10 @@
 import React from "react";
 import styles from "./Contact.module.scss";
 import ContactForm from "../ContactForm/ContactForm";
-import { Heading1, Paragraph } from "../Utils/Texts";
+import { Heading2, Paragraph } from "../Utils/Texts";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import { BiPhone, BiMailSend } from "react-icons/bi";
+import Map from "../Map/Map";
 
 export default function Contact({ tiedot }) {
   return (
@@ -14,12 +15,12 @@ export default function Contact({ tiedot }) {
           <div>
             <div className={styles.info}>
               <Paragraph>
-                <HighlightedText type={1}>OTA YHTEYTTÄ</HighlightedText>
+                <HighlightedText type={2}>OTA YHTEYTTÄ</HighlightedText>
               </Paragraph>
-              <Heading1>
+              <Heading2>
                 Sinä pyydät, me{" "}
                 <HighlightedText type={3}>teemme</HighlightedText>
-              </Heading1>
+              </Heading2>
               <Paragraph>
                 Mitään ei tapahdu vahingossa. Ota meihin yhteyttä, ja
                 suunnitellaan sinulle yhdessä paras ratkaisu.
@@ -41,22 +42,19 @@ export default function Contact({ tiedot }) {
 
               <div className={styles.aukiolot}>
                 <div>
-                  <h2>MA-PE</h2>
+                  <h3>MA-PE</h3>
                   <Paragraph>{tiedot.maPeAukioloajat}</Paragraph>
                 </div>
                 <div>
-                  <h2>LA</h2>
+                  <h3>LA</h3>
                   <Paragraph>{tiedot.laAukioloajat}</Paragraph>
                 </div>
                 <div>
-                  <h2>SU</h2>
+                  <h3>SU</h3>
                   <Paragraph>{tiedot.suAukioloajat}</Paragraph>
                 </div>
               </div>
-              <img
-                src="/images/JKFIX kartta.png"
-                className={styles.kartta}
-              ></img>
+              <Map />
             </div>
           </div>
           <ContactForm />

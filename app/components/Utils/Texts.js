@@ -24,3 +24,6 @@ export function Heading2({ children }) {
 export function Heading3({ children }) {
   return <h3 className={styles.heading3}>{children}</h3>;
 }
+export function Heading4({ children }) {
+  return <h4 className={styles.heading4}>{children}</h4>;
+}

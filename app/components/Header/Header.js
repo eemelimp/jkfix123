@@ -21,7 +21,7 @@ export default function Header() {
         <div>
           {/* <Paragraph>+358 XX XXX XXXX</Paragraph> */}
           <Link href="/#ota-yhteytta">
-            <ButtonPrimary>OTA YHTEYTTÄ</ButtonPrimary>
+            <ButtonPrimary>PYYDÄ TARJOUS</ButtonPrimary>
           </Link>
         </div>
       </div>

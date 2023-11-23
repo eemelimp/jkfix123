@@ -2,7 +2,7 @@
 import React from "react";
 
 import styles from "./PalveluItem.module.scss";
-import { Heading1, Paragraph } from "../Utils/Texts";
+import { Heading2, Paragraph } from "../Utils/Texts";
 import { motion } from "framer-motion";
 
 export default function PalveluItem({ imageSrc, title, description, index }) {
@@ -33,7 +33,7 @@ export default function PalveluItem({ imageSrc, title, description, index }) {
     >
       <div className={styles.content}>
         <div className={styles.info}>
-          <div className={styles.accent}></div> <Heading1>{title}</Heading1>
+          <div className={styles.accent}></div> <Heading2>{title}</Heading2>
         </div>
         <Paragraph>{description}</Paragraph>
       </div>

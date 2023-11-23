@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { IoIosContact } from "react-icons/io";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
 import { useRef, useEffect } from "react";
-import { Heading2, Paragraph } from "../Utils/Texts";
+import { Heading3, Paragraph } from "../Utils/Texts";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import { signUpSchema } from "../Utils/contactFormSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -79,7 +79,7 @@ export default function ContactForm() {
     <div className={styles.contactForm}>
       {!isSubmitting && !isSubmitSuccessful && (
         <>
-          <Heading2>Kysy kysymys tai pyydä hinta-arvio</Heading2>
+          <Heading3>Kysy kysymys tai pyydä hinta-arvio</Heading3>
           <Paragraph>Vastaamme yleisesti tunnin sisällä</Paragraph>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.textInput}>

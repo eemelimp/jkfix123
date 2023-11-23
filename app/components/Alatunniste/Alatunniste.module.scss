@@ -1,0 +1,61 @@
+.alatunniste {
+  padding-top: 52px;
+  padding-bottom: 60px;
+  background-color: var(--clr-background-2);
+  background-image: url("/images/alatunniste-bg.png");
+  background-size: cover;
+  cursor: default;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.footerSplit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vasen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+}
+
+.oikea {
+  text-align: right;
+}
+
+.korostettu {
+  p {
+    font-weight: 900 !important;
+  }
+}
+.himmennetty {
+  p {
+    font-weight: 700;
+    color: var(--clr-paragraph-2);
+    font-size: 16px;
+  }
+}
+
+.someLogot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  :nth-child(3) {
+    margin-left: -5px;
+    margin-top: -2px;
+  }
+}
+
+.kuittaus {
+  margin-left: -113px;
+  margin-top: 20px;
+}
+
+.footerRows {
+  flex-direction: column;
+}

@@ -21,10 +21,10 @@ export default function Hero() {
       >
         <div className={styles.leftSide}>
           <Heading1>
-            <HighlightedText type={2}>
+            <HighlightedText type={4}>
               Pidä huolta itsestäsi, me pidämme{" "}
             </HighlightedText>
-            <HighlightedText type={1}>autostasi</HighlightedText>
+            <HighlightedText type={2}>autostasi</HighlightedText>
           </Heading1>
           <Paragraph>
             Tarjoamme räätälöityjä ja asiakaskeskeisiä pesu, teippaus ja
