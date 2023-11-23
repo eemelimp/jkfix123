@@ -3,14 +3,14 @@ import Hero from "./components/Hero/Hero";
 import Identiteetti from "./components/Identiteetti/Identiteetti";
 import Palvelu from "./components/Palvelu/Palvelu";
 import Contact from "./components/Contact/Contact";
-import {getData} from "./components/Utils/hygraph";
+import { getData } from "./components/Utils/hygraph";
 import { Suspense } from "react";
 import DefaultLoading from "./loading";
 import Hinnasto from "./components/Hinnasto/Hinnasto";
 import Ukkt from "./components/Ukkt/Ukkt";
 import Alatunniste from "./components/Alatunniste/Alatunniste";
 
-export const revalidate = 1; 
+export const revalidate = 1;
 
 export default async function Home() {
   // const { palvelut } = await getPalvelut();
@@ -21,7 +21,7 @@ export default async function Home() {
   // console.log(hinnastot);
 
   const { palvelut, tiedot, hinnastot, ukkt } = await getData();
-  
+
   return (
     <Suspense fallback={<DefaultLoading />}>
       <Hero />
